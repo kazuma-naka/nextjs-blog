@@ -5,7 +5,7 @@ const FirstPost: NextPage = () => {
   return (
     <>
       <h1>Hello, first post!</h1>
-      <Link href="/">戻る</Link>
+      <Link href="/">トップページへ戻る</Link>
     </>
   );
 };
