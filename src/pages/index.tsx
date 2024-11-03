@@ -16,12 +16,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Link href="/posts">posts/index.tsx へのリンク</Link>
-
-      <Link href="posts/first-post">first-post へのリンク</Link>
-      <br></br>
-      <br></br>
-      <Link href="/lottery">おみくじ へのリンク</Link>
+      <div className={styles.linksParent}>
+        <Link href="/posts">posts/index.tsx へのリンク</Link>
+        <Link href="posts/first-post">first-post へのリンク</Link>
+        <Link href="/lottery">おみくじ へのリンク</Link>
+      </div>
 
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
