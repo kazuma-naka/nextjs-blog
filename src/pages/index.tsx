@@ -20,6 +20,7 @@ export default function Home() {
         <Link href="/posts">posts/index.tsx へのリンク</Link>
         <Link href="posts/first-post">first-post へのリンク</Link>
         <Link href="/lottery">おみくじ へのリンク</Link>
+        <Link href="/posts/first-post">最初の投稿</Link>
       </div>
 
       <main className={`${styles.main} ${inter.className}`}>
