@@ -20,6 +20,7 @@ export default function Home() {
         <Link href="/posts">posts/index.tsx へのリンク</Link>
         <Link href="posts/first-post">first-post へのリンク</Link>
         <Link href="/lottery">おみくじ へのリンク</Link>
+        <Link href="/posts/first-post">最初の投稿</Link>
       </div>
 
       <main className={`${styles.main} ${inter.className}`}>
@@ -41,7 +42,6 @@ export default function Home() {
                 className={styles.vercelLogo}
                 width={100}
                 height={24}
-                priority
               />
             </a>
           </div>
@@ -54,7 +54,6 @@ export default function Home() {
             alt="Next.js Logo"
             width={180}
             height={37}
-            priority
           />
         </div>
 
