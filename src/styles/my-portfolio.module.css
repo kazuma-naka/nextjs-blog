@@ -1,20 +1,89 @@
-.background {
-    width: 100%;
-    height: 100vh;
-    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/...");
-    background-size: cover;
-    background-position: center;
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #e0e0e0;
 }
 
-.link {
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.cardContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card a {
     color: #1e90ff;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 5px;
     background: rgba(255, 255, 255, 0.3);
+    transition: background 0.2s;
+}
+
+.card a:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+}
+
+.backLink {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+    color: #1e90ff;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.backLink:hover {
+    box-shadow: inset 3px 3px 8px #bebebe, inset -3px -3px 8px #ffffff;
 }
