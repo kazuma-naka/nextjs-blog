@@ -22,6 +22,7 @@ export default function Home() {
         <Link href="/lottery">おみくじ へのリンク</Link>
         <Link href="/posts/first-post">最初の投稿</Link>
         <Link href="/posts/my-portfolio">My Portfolio</Link>
+        <Link href="specialty-form">Form</Link>
       </div>
 
       <main className={`${styles.main} ${inter.className}`}>
